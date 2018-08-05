@@ -1,0 +1,29 @@
+.logo-bar {
+  padding: 5px 5px 5px 5px;
+  position: relative;
+}
+.no-data {
+  margin-top: 30px;
+}
+.logo {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  margin-top: -50px;
+  border: 2px #fff solid;
+}
+.address {
+  display: flex;
+  display: -webkit-flex;
+  margin-left: 84px;
+  margin-top: -13px;
+}
+.address-icon {
+  color: #EC6733;
+}
+.address-title {
+  font-size: 1.2rem;
+  margin-top: 3px;
+  margin-left: 6px;
+  color: #333;
+}

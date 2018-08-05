@@ -1,0 +1,132 @@
+.input-div {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: flex-start;
+  padding: 10px;
+  border-bottom: 1px #eee solid;
+}
+.input-title {
+  width: 25%;
+  font-size: 1.4rem;
+  margin-top: 6px;
+}
+.add-input {
+  border: none;
+  width: 70%;
+}
+.map {
+  font-size: 25px;
+  color: #EE8161;
+}
+.map:hover {
+  color: #EC6733;
+}
+.textarea {
+  border-radius: 5px;
+  padding: 10px;
+  height: 40px;
+}
+.textarea:focus {
+  border: 1px #40a9ff solid;
+  outline: 0;
+}
+.btn-register {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+.register {
+  width: 70%;
+  font-size: 1.4rem;
+  background: #EE8161;
+  border-radius: 3px;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+}
+.register:hover {
+  background: #EC6733;
+}
+.add-mask {
+  top: 0;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  left: 0;
+}
+.add-dialog {
+  position: absolute;
+  z-index: 100;
+  background: #fff;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 5px;
+}
+.map {
+  display: block;
+}
+.map-input {
+  padding: 0 10px;
+}
+.hide {
+  display: none;
+}
+.input-way {
+  border-bottom: 1px #eee solid;
+}
+.way {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-left: 25px;
+}
+.ant-radio-inner {
+  border-color: #EE8061 !important;
+}
+.ant-radio-inner:after {
+  background-color: #EE8061 !important;
+}
+.ant-radio-group {
+  width: 100% !important;
+}
+.wechat-icon {
+  color: #377022;
+  font-size: 25px;
+}
+.pay-icon {
+  color: #EC6733;
+  font-size: 25px;
+}
+.title-wechat {
+  font-size: 1.4rem;
+  margin-left: 5px;
+  position: absolute;
+  margin-top: 8px;
+}
+.choose-default {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.search {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  padding: 10px;
+  background: #eee;
+}
+.search-input {
+  /* width: 70%; */
+  margin: 0 10px;
+}
+.add-return-icon {
+  color: #555;
+  margin-top: 4px;
+}

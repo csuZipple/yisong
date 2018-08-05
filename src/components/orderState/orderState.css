@@ -1,0 +1,50 @@
+.order-state {
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  border-bottom: 8px #eee solid;
+}
+.first {
+  margin: 0 10px;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background: #ccc;
+}
+.circle-active {
+  background: #EE8161;
+}
+.number {
+  margin-top: 9px;
+  display: inline-block;
+  color: #fff;
+}
+.line-div {
+  margin-top: 20px;
+}
+.line {
+  background: #ccc;
+  width: 50px;
+  height: 3px;
+  border-radius: 5px;
+}
+.line-active {
+  background: #EE8161;
+}
+.state {
+  font-size: 1rem;
+  margin-top: 5px;
+  color: #ccc;
+}
+.state-active {
+  color: #EE8161;
+}

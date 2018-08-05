@@ -1,0 +1,25 @@
+.user-item {
+  padding: 10px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  border-bottom: 2px #eee solid;
+}
+.user-item:hover {
+  background: #eee;
+}
+.item-title {
+  color: #555;
+}
+.left-icon {
+  color: #555;
+  font-size: 2rem;
+  margin-top: -3px;
+}
+.help-item {
+  border-top: 4px #eee solid;
+}
+.mess-top {
+  margin-top: 60px;
+}

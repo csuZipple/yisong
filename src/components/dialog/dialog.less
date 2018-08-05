@@ -1,0 +1,144 @@
+@import url('../../assets/variables.less');
+
+.mask{
+    top: 0;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: @mask-color;
+    opacity: 0.6;
+    left: 0;
+}
+.dialog{
+    position: fixed;
+    z-index: 100;
+    background: @white;
+    top: 27%;    
+    width: 75%;
+    left: 13%;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+.close{
+    .flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+.img-div{
+    text-align: center;
+}
+.close-icon{
+    font-size: @footer-icon;
+}
+.detail-title{
+    text-align: left;
+    padding: 10px;
+    font-size: @font-size + 0.4;
+    color: @font-color;
+}
+.dialog-img{
+    width: 150px;
+}
+.dialog-operation{
+    .flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px @bg-color solid;
+}
+.dialog-price{
+    color: @address-color;
+    font-size: @font-size + 0.6;
+}
+.old{
+    color: @font-color;
+    text-decoration: line-through;
+    margin-left: 5px;
+    font-size: @font-size;
+}
+.add-cart{
+    .padding(3px, 10px, 3px, 10px);
+    background: @address-color;
+    color: @white;
+    font-size: @font-size;
+    border-radius: 5px;
+}
+.close-mess{
+    .flex;
+    justify-content: space-between;
+    font-size: @font-size + 0.6;
+    .padding(10px, 10px, 10px, 10px);
+    border-bottom: 1px @bg-color solid;
+}
+// .dialog-title{
+//     margin-left: 30px;
+// }
+.close-mess-icon{
+    margin-top: -5px;
+}
+.mess-content{
+    padding: 20px;
+    font-size: @font-size;
+}
+.btn{
+    padding: 10px;
+    .flex;
+    justify-content: center;
+}
+.close-btn{
+    background: @address-color;
+    color: @white;
+    padding: 5px;
+    width: 80%;
+    border-radius: 3px;
+    text-align: center;
+}
+.close-del-btn{
+    margin: 0 10px;
+}
+.btn-show{
+    display: block;
+}
+.btn-hide{
+    display: none;
+}
+.cancel-btn{
+    background: @gray;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: inline-block;
+}
+.addr-dialog{
+    position: absolute;
+    z-index: 100;
+    background: @white;
+    top: 12%;
+    width: 87%;
+    height: 62%;
+    left: 6%;
+    overflow: scroll;
+    border-radius: 5px;
+}
+.close-addr-mess{
+    justify-content: center;
+}
+.store-item{
+    .flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px @bg-color solid;
+    &:hover{
+        background: @bg-color;
+    }
+}
+.store-name{
+    font-size: @font-size + 0.2;
+}
+.store-addr{
+    font-size: @font-size - 0.2;
+    max-width: 50%;
+}

@@ -1,0 +1,100 @@
+.nav-bar {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  padding: 5px 5px 5px 5px;
+}
+.nav-bar-cat {
+  display: -ms-flexbox;
+  display: flex;
+  overflow: scroll;
+  display: -webkit-flex;
+  justify-content: flex-start;
+  padding: 5px 5px 5px 5px;
+  border-bottom: 1px #eee solid;
+}
+.nav-item {
+  width: 20%;
+  text-align: center;
+  position: relative;
+  margin: 5px 0;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+}
+.nav-item-cat {
+  text-align: center;
+  position: relative;
+  margin: 5px 10px;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.nav-cat-hide {
+  display: none;
+}
+.nav-item-cat-active {
+  width: 35px;
+  height: 3px;
+  margin-left: 8px;
+  margin-top: 3px;
+  display: block;
+}
+.rect {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.rect-native {
+  background: #EC6D6B;
+}
+.rect-bin {
+  background: #EE8262;
+}
+.rect-drink {
+  background: #F19B5E;
+}
+.rect-cigarette {
+  background: #F4AB33;
+}
+.rect-xue {
+  background: #FBDD64;
+}
+.rect-life {
+  background: #F7BF54;
+}
+.rect-spices {
+  background: #F19A5E;
+}
+.rect-top {
+  background: #F7BF54;
+}
+.rect-adult {
+  background: #EE8061;
+}
+.nav-icon {
+  color: #fff;
+  font-size: 32px;
+}
+.nav-title {
+  font-size: 1.2rem;
+  color: #000;
+  margin-top: 8px;
+}
+.img-icon {
+  /* margin-top: 10px; */
+  width: 50px;
+  height: 50px;
+}
+@media screen and (max-width: 319px) {
+  .rect {
+    width: 40px;
+    height: 40px;
+  }
+  .nav-title {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,30 @@
+@import url('../../assets/variables.less');
+
+.input-div{
+    .flex;
+    justify-content: flex-start;
+    padding: 10px;
+}
+.input-title{
+    width: 25%;
+    font-size: @font-size;
+    margin-top: 6px;
+}
+.code-input{
+    width: 20%;
+    border: 1px @href-color dashed;
+    color: @href-color;
+    height: 25px;
+    padding: 3px 4px;
+    font-size: @font-size - 0.2;
+    margin-top: 5px;
+    margin-left: 4px;
+    &:hover{
+        color: @white;
+        background: @href-color;
+    }
+}
+.input{
+    border: 1px @bg-color solid;
+    width: 50%;
+}

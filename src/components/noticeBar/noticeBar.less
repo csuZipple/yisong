@@ -1,0 +1,65 @@
+@import url("../../assets/variables.less");
+
+.notice-bar{
+    .padding;
+    .flex;
+}
+.notice-icon{
+    background: @notice-color;
+    color: @black;
+    border-radius: 5px;
+    .padding(0px, 5px, 0px, 5px);
+    margin-left: 15px;
+}
+.icon-notice{
+    font-size: @font-size;
+}
+.notice-title{
+    font-size: @font-size - 0.4;
+}
+.notice{
+    color: @notice-font-color;
+    font-size: @font-size - 0.4;
+    margin-top: 4px;
+    margin-left: 80px;
+    position: absolute;
+    .flex;
+    flex-wrap: wrap;   
+    width: 70%;
+}
+.notice-item{
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.notice-show{
+    transition: opacity 1s;
+    animation: show 1s;  
+    // display: inline-block;
+    opacity: 1;
+}
+.notice-hide{
+    transition: opacity 1s;
+    animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+    animation: hide 1s;
+    opacity: 0;
+    // display: none;
+}
+
+@keyframes show{
+    0%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}  
+@keyframes hide{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-10px);
+    }
+}  

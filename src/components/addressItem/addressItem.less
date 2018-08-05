@@ -1,0 +1,86 @@
+@import url('../../assets/variables.less');
+
+.address-item{
+    border-bottom: 8px @bg-color solid;
+}
+.top-addr:hover{
+    background: @bg-color;
+}
+.addr-top{
+    padding: 10px;
+    .flex;
+    justify-content: space-between;
+}
+.name, .tel{
+    font-size: @font-size;
+    color: @font-color;
+}
+.addr{
+    .flex;
+    justify-content: flex-start;
+    .padding(5px, 10px, 10px, 10px);
+    font-size: @font-size - 0.2;
+    color: @font-gray;
+}
+.operation{
+    padding: 10px;
+    .flex;
+    justify-content: space-between;
+    border-top: 1px @bg-color solid;
+}
+.check-box{
+    width: 16px;
+    height: 16px;
+    background-color: @white;
+    -webkit-appearance:none;
+    border: 1px solid @adult-color;
+    border-radius: 2px;
+    outline: none;
+}
+.checked{
+    display: inline-block;
+}
+.not-check{
+    display: none;
+}
+.checkbox{
+    position: relative;
+    width: 50%;
+}
+.yes-icon{
+    position: absolute;
+    top: -5px;
+    left: 0;
+    color: @adult-color;
+}
+.label{
+    position: absolute;
+    font-size: @font-size - 0.2;
+    margin-left: 10px;
+}
+.op-item{
+    margin: 0 10px;
+}
+.op-icon{
+    color: @font-gray;
+}
+.op-editicon{
+    color: @font-color;
+}
+.op-title{
+    color: @font-gray;
+    font-size: @font-size - 0.2;
+    margin-left: 3px;
+}
+.show{
+    display: inline-block;
+}
+.hide{
+    display: none;
+}
+.select-opera{
+    justify-content: flex-end !important;
+}
+.ant-popover-placement-top, .ant-popover-placement-topLeft, .ant-popover-placement-topRight{
+    left: 55% !important;
+}

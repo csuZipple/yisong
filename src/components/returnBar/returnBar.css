@@ -1,0 +1,14 @@
+.return-bar {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: flex-start;
+  background: #FACE33;
+  padding: 10px 10px 10px 10px;
+}
+.return-title {
+  font-size: 1.6rem;
+  margin-left: 10px;
+}
+.return-icon {
+  color: #555;
+}

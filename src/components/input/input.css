@@ -1,0 +1,29 @@
+.input-div {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.input-title {
+  width: 25%;
+  font-size: 1.4rem;
+  margin-top: 6px;
+}
+.code-input {
+  width: 20%;
+  border: 1px #1A6DD8 dashed;
+  color: #1A6DD8;
+  height: 25px;
+  padding: 3px 4px;
+  font-size: 1.2rem;
+  margin-top: 5px;
+  margin-left: 4px;
+}
+.code-input:hover {
+  color: #fff;
+  background: #1A6DD8;
+}
+.input {
+  border: 1px #eee solid;
+  width: 50%;
+}

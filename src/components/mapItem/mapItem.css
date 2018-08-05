@@ -1,0 +1,27 @@
+.map-item {
+  display: flex;
+  display: -webkit-flex;
+  display: block;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px #eee solid;
+  align-items: center;
+  color: #333;
+}
+.map-item:hover {
+  background: #eee;
+}
+.item-name {
+  font-size: 1.4rem;
+}
+.item-address {
+  font-size: 1rem;
+  color: #777;
+  max-height: 40px;
+  overflow: scroll;
+}
+.item-district {
+  font-size: 1.2rem;
+  min-width: 31%;
+  text-align: left;
+}

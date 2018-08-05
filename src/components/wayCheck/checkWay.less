@@ -1,0 +1,66 @@
+@import url('../../assets/variables.less');
+.input-way{
+    border-bottom: 1px @bg-color solid;
+}
+.way{
+    .flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-left: 25px;
+}
+.ant-radio-inner{
+    border-color: @adult-color !important;
+    &:after{
+        background-color: @adult-color !important;
+    }
+}
+.ant-radio-group{
+    width: 100% !important;
+}
+.wechat-icon{
+    color: @wechat-color;
+    font-size: @footer-icon;
+}
+.pay-icon{
+    color: @address-color;
+    font-size: @footer-icon;
+}
+.title-wechat{
+    font-size: @font-size;
+    margin-left: 5px;
+    position: absolute;
+    margin-top: 8px;
+}
+.btn-register{
+    .flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+.register{
+    width: 70%;
+    font-size: @font-size;
+    background: @btn-color;
+    border-radius: 3px;
+    color: @white;
+    padding: 5px;
+    text-align: center;
+    &:hover{
+        background: @address-color;
+    }
+}
+.order-total{
+    padding: 10px;
+    .flex;
+    justify-content: flex-end;
+}
+.border{
+    border-bottom: 1px @bg-color solid;
+    padding: 10px;
+}
+.hide{
+    display: none;
+}
+.show-way{
+    .flex;
+}

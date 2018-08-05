@@ -1,0 +1,144 @@
+@import url('../../assets/variables.less');
+
+.cart-dialog{
+    position: absolute;
+}
+.cart-mask{
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: @mask-color;
+    opacity: 0.6;
+    left: 0;
+}
+.dialog-cart{
+    background: @white;
+    position: fixed;
+    bottom: 62px;
+    z-index: 10;
+    width: 100%;
+    font-size: @font-size;
+}
+.cart-title{
+    .flex;
+    justify-content: space-between;
+    .padding(10px, 20px, 10px, 20px); 
+    border-bottom: 1px @bg-color solid;
+}
+.cart-footer{
+    .flex;
+    justify-content: space-between;
+    border-top: 1px @gray solid;
+}
+.cart-total, .total-price{
+    .padding(10px, 20px, 10px, 20px); 
+}
+.good-price{
+    color: @address-color;
+    font-size: @font-size + 0.4;
+}
+.final{
+    background: @btn-color;
+    color: @white;
+    // .padding(5px, 10px, 5px, 10px);
+    // border-radius: 5px;
+    padding: 14px 30px;
+    &:hover{
+        background: @address-color;
+    }
+}
+.tit{
+    font-size: @font-size + 0.6;
+    font-weight: bold;
+}
+.clear-cart{
+    .padding(5px, 10px, 5px, 10px);
+    border: 1px @href-color dashed;
+    color: @href-color;
+    border-radius: 5px;
+    &:hover{
+        background: @href-color;
+        color: @white;
+    }
+}
+.content-item{
+    .flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.cart-content{
+    .padding(10px, 10px, 10px, 10px);
+    border-bottom: 1px @bg-color solid;
+}
+.cart-operation{
+    .flex;
+    justify-content: center;
+    margin-top: -3px;
+}
+.icon-ope{
+    border: 1px @gray solid;
+    padding: 2px;
+    &:hover{
+        background: @gray;
+    }
+}
+.cart-input{
+    width: 40px;
+    border: 1px @gray solid;
+    border-right: none;
+    border-left: none;
+    text-align: center;
+}
+.content-price{
+    font-size: @font-size + 0.2;
+}
+.info-bar{
+    margin-bottom: 20px;
+}
+.info{
+    .flex;
+    .padding(10px, 20px, 10px, 20px);
+    justify-content: flex-start;
+}
+.info-icon{
+    border: 1px @address-color solid;
+    border-radius: 5px;
+    .padding(0px, 2px, 0px, 2px);
+    color: @address-color;
+    font-size: @font-size - 0.4;
+}
+.info-content{
+    margin-left: 10px;
+    font-size: @font-size - 0.4;
+    margin-top: 1px;
+}
+
+@media screen and (max-width: 330px){
+    .final{
+        padding: 14px 20px;
+    }
+    .dialog-cart{
+        font-size: @font-size - 0.4;
+    }
+    .content-price{
+        font-size: @font-size;
+    }
+    .input{
+        height: 25px;
+    }
+    .icon-ope{
+        height: 25px;
+        padding: 0;
+    }
+}
+.display{
+    display: block;
+}
+.hide{
+    display: none;
+}
+.name{
+    min-width: 160px;
+}

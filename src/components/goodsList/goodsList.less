@@ -1,0 +1,52 @@
+@import url('../../assets/variables.less');
+
+.goods-div{
+    padding-bottom: 70px;
+    position: relative;
+}
+.goods-div-po{
+    position: fixed;
+}
+.goods-list{
+    // .padding;
+    border-top: 6px @bg-color solid;
+}
+.items{
+    .flex;
+    overflow: scroll;
+    .padding;
+}
+.goods-title{
+    border-bottom: 1px @bg-color solid;
+    .padding(10px, 10px, 10px, 10px);
+    color: @font-color;
+    font-size: @font-size;
+}
+.goods-item{
+    width: 100px;
+    // .padding(5px, 10px, 5px, 10px); 
+    // border: 1px @gray solid;
+    text-align: center;
+    margin: 5px 6px;
+}
+.item-name{
+    font-size: @font-size - 0.4;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.item-img{
+    width: 100px;
+}
+.item-price{
+    font-size: @font-size - 0.2;
+    color: @address-color;
+}
+.item-icon{
+    font-size: @font-size + 0.4;
+    margin-top: -4px;
+}
+.operation{
+    .flex;
+    justify-content: space-around;
+}

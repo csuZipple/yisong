@@ -1,0 +1,25 @@
+.order-content {
+  padding-bottom: 70px;
+}
+.order-item {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px #eee solid;
+  align-items: center;
+}
+.order-item:hover {
+  background: #eee;
+}
+.order-title {
+  font-size: 1.6rem;
+  color: #555;
+}
+.description {
+  text-align: right;
+}
+.order-count {
+  color: #777;
+  font-size: 1.2rem;
+}

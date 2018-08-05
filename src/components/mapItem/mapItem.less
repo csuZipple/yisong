@@ -1,0 +1,27 @@
+@import url('../../assets/variables.less');
+
+.map-item{
+    .flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px @bg-color solid;
+    align-items: center;
+    color: @font-color;
+    &:hover{
+        background: @bg-color;
+    }
+}
+.item-name{
+    font-size: @font-size;
+}
+.item-address{
+    font-size: @font-size - 0.4;
+    color: @font-gray;
+    max-height: 40px;
+    overflow: scroll;
+}
+.item-district{
+    font-size: @font-size - 0.2;
+    min-width: 31%;
+    text-align: left;
+}

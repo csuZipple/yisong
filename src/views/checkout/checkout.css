@@ -1,0 +1,20 @@
+.border {
+  border-bottom: 1px #eee solid;
+  padding: 10px;
+}
+.note-input {
+  padding: 10px;
+}
+.textarea {
+  border-radius: 5px;
+  padding: 10px;
+  height: 40px;
+}
+.textarea:focus {
+  border: 1px #40a9ff solid;
+  outline: 0;
+}
+.input {
+  border: 1px #eee solid;
+  width: 100%;
+}

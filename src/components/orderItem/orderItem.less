@@ -1,0 +1,45 @@
+@import url('../../assets/variables.less');
+
+// .order-items{
+//     padding: 10px;
+// }
+.border{
+    border-bottom: 1px @bg-color solid;
+    padding: 10px;
+}
+.order-item{
+    .flex;
+    justify-content: space-between;
+}
+.order-first{
+    .flex;
+    justify-content: flex-start;
+}
+.item-name{
+    font-size: @font-size - 0.2;
+}
+.count{
+    margin-left: 15px;
+    color: @icon-color;
+    font-size: @font-size - 0.4;
+}
+.item-price{
+    color: @address-color;
+    font-size: @font-size;
+}
+.order-total{
+    padding: 10px;
+    .flex;
+    justify-content: flex-end;
+}
+.cancle-order{
+    justify-content: space-between;
+    align-items: center;
+}
+.cancle{
+    font-size: @font-size - 0.2;
+    color: @href-color;
+    &:hover{
+        text-decoration: underline;
+    }
+}

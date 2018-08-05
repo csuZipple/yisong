@@ -1,0 +1,50 @@
+.order-opera {
+   padding: 10px;
+   margin-top: 30px;
+}
+.pay-order {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  padding: 10px;
+}
+.pay-btn {
+  background: #EE8161;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 10px;
+  width: 80%;
+  text-align: center;
+  border-radius: 5px;
+  /* margin-bottom: -1rem; */
+}
+.pay-btn:hover {
+  background: #EC6733;
+}
+.del-order {
+  color: #aaa;
+  font-size: 1.2rem;
+}
+.del-order:hover {
+  text-decoration: underline;
+}
+.delete-btn {
+  background-color: #bbb;
+  color: black;
+   font-size: 1.4rem;
+   padding: 10px;
+   width: 80%;
+   text-align: center;
+   border-radius: 5px;
+}
+.helper {
+   margin-top: -3rem;
+}
+.delete-btn:hover {
+  background-color: #cccccc;
+}
+
+.tip {
+  text-align: center;
+  margin-top: -2.2rem;
+}

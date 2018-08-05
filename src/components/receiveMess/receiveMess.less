@@ -1,0 +1,38 @@
+@import url('../../assets/variables.less');
+
+.receive-mess{
+    .padding(10px, 10px, 20px, 10px);
+    border-bottom: 1px @bg-color solid;
+}
+.show-hover{
+    &:hover{
+        background: @bg-color;
+    }
+}
+.top{
+    .flex;
+    justify-content: space-between;
+    font-size: @font-size;
+    color: @font-color;
+    padding: 10px 0;
+}
+.receive-addr{
+    .flex;
+    justify-content: flex-start;
+    font-size: @font-size - 0.2;
+    color: @icon-color;
+}
+.title{
+    width: 17%;
+}
+.content{
+    width: 75%;
+    word-wrap: break-word;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: inline-block;
+    color: @font-color;
+}

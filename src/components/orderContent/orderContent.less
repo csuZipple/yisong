@@ -1,0 +1,28 @@
+@import url('../../assets/variables.less');
+
+.order-content{
+    padding-bottom: 70px;
+}
+.order-item{
+    .flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px @bg-color solid;
+    align-items: center;
+    &:hover{
+        background: @bg-color;
+    }
+}
+.order-title{
+    font-size: @font-size + 0.2;
+    color:  @mask-color;
+    // font-weight: bold;
+}
+.description{
+    text-align: right;
+}
+.order-count{
+    color: @font-gray;
+    font-size: @font-size - 0.2;
+    // line-height: 24px;
+}

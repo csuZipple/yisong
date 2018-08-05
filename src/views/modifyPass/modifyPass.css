@@ -1,0 +1,41 @@
+.btn-register {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+.register {
+  width: 70%;
+  font-size: 1.4rem;
+  background: #EE8161;
+  border-radius: 3px;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+}
+.register:hover {
+  background: #EC6733;
+}
+.input-div {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.input-title {
+  width: 35%;
+  font-size: 1.4rem;
+  margin-top: 6px;
+}
+.input {
+  border: 1px #eee solid;
+  width: 50%;
+}
+.icon-eye {
+  font-size: 25px;
+  margin-top: -5px;
+  margin-left: 5px;
+}
+.open-eyes {
+  margin-left: 10px;
+}

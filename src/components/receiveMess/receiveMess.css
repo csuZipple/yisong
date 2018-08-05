@@ -1,0 +1,36 @@
+.receive-mess {
+  padding: 10px 10px 20px 10px;
+  border-bottom: 1px #eee solid;
+}
+.show-hover:hover {
+  background: #eee;
+}
+.top {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  color: #333;
+  padding: 10px 0;
+}
+.receive-addr {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: flex-start;
+  font-size: 1.2rem;
+  color: #aaa;
+}
+.title {
+  width: 17%;
+}
+.content {
+  width: 75%;
+  word-wrap: break-word;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: inline-block;
+  color: #333;
+}

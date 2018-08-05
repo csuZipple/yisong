@@ -41,6 +41,8 @@ class OrderDetail extends React.Component{
                         }, function(){
                             that.caculateState();
                         })
+                        // console.log(result.data,"---------------------------");
+                        // console.log(that.state.data.order.dicount);
                     }
                 })
             }
@@ -229,7 +231,7 @@ class OrderDetail extends React.Component{
                     <ReturnBar title="订单详情"></ReturnBar>
                     <OrderState status={status} ></OrderState>
                     <ReceiveMess address={data.address}></ReceiveMess>
-                    <OrderItem lists={data.items} total={data.order.price} status={status} canceled={cancel} token={this.props.token} orderId={this.props.match.params.orderId} updateCancel={this.updateCancel.bind(this)}></OrderItem>
+                    <OrderItem lists={data.items} total={data.order.price} orderDiscount={data.order.dicount} status={status} canceled={cancel} token={this.props.token} orderId={this.props.match.params.orderId} updateCancel={this.updateCancel.bind(this)}></OrderItem>
                     {console.log(status)}
                     {console.log(cancel)}
                     <div className="note">

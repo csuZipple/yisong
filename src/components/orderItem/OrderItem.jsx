@@ -10,7 +10,8 @@ class OrderItem extends React.Component{
             lists: props.lists,
             total: props.total,
             status: props.status,
-            canceled:props.canceled
+            canceled:props.canceled,
+            discount:props.orderDiscount
         }
     }
     componentWillReceiveProps(nextProps){
@@ -65,7 +66,7 @@ class OrderItem extends React.Component{
         })
     }
     render(){
-        const {lists, total, status,canceled} = this.state;
+        const {lists, total, status,canceled,discount} = this.state;
         let Cancle;
         console.log("OrderItem:"+canceled);
         if(status === 1){
@@ -88,7 +89,8 @@ class OrderItem extends React.Component{
                         <div className="item-name">{list.goodsName}</div>
                         <div className="count">x{list.count}</div>
                     </div>
-                    <div className="item-price">¥{(list.price*list.discount).toFixed(2)}</div>
+                    <div className="item-price">¥{list.discount===0?(list.price).toFixed(2):(list.price * list.discount).toFixed(2)}</div>
+
                 </div>
             ))
         }
@@ -99,7 +101,7 @@ class OrderItem extends React.Component{
                 <div className={["order-total", status === 1? "cancle-order": ""].join(" ")}>
                     {Cancle}
                     <div className="total">
-                        合计： <span className="item-price">¥{total}</span>
+                        合计： <span className="item-price">¥{(total - discount).toFixed(2)}</span>
                     </div>
                 </div>
             </div>

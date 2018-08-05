@@ -23,7 +23,7 @@ class OrderContent extends React.Component{
                         <Link className="order-item" key={index} to={["/order/detail/", item.orderId].join("")}>
                             <div className="order-title">{item.orderId}</div>
                             <div className="description">
-                                <div className="order-count">总价：{item.price}元</div>
+                                <div className="order-count">总价：{(item.price - item.dicount).toFixed(2)}元</div>
                             </div>
                         </Link>
                     ))
